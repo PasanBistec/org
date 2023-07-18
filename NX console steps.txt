@@ -1,0 +1,45 @@
+To create a monorepo with Nx Console and Angular, follow these steps:
+
+1. Install Nx Console globally by running the following command in your terminal:
+   ```
+   npm install -g nx
+   ```
+
+2. Create a new Angular workspace using Nx Console. Navigate to the directory where you want to create the workspace and run:
+   ```
+   npx create-nx-workspace@latest
+   ```
+
+   This command will prompt you to choose a preset. You can select the "empty" preset or choose from other available options based on your project requirements.
+
+3. Once the workspace is created, navigate into the newly created workspace folder:
+   ```
+   cd <your-workspace-folder>
+   ```
+
+4. Generate a new Angular application within the workspace by running:
+   ```
+   nx generate @nrwl/angular:application <app-name>
+   ```
+
+   Replace `<app-name>` with the desired name for your Angular application.
+
+5. You can continue to generate additional applications, libraries, or other features within your monorepo using Nx Console. For example, to generate a new library, run:
+   ```
+   nx generate @nrwl/angular:library <lib-name>
+   ```
+
+   Replace `<lib-name>` with the desired name for your library.
+
+6. Nx Console provides a graphical user interface (GUI) for managing your project. Launch the Nx Console by running:
+   ```
+   npx nx serve <app-name>
+   ```
+
+   This command will start the Nx Console server and open it in your default browser.
+
+7. In the Nx Console, you can use various commands and features to manage your monorepo. You can generate components, services, modules, and more using the provided GUI or by running commands in the terminal.
+
+Note: Nx Console provides additional functionality for managing a monorepo, including code sharing, dependency management, and testing. You can explore the Nx documentation for more details on advanced usage and configuration options.
+
+Remember to install the required dependencies and packages as mentioned in the official Angular documentation. Nx Console complements the Angular CLI and provides additional features for managing a monorepo efficiently.
